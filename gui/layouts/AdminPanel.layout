@@ -1,0 +1,14 @@
+<root>
+	<Widget name="AdminRoot" left="0.1" top="0.05" width="0.8" height="0.9">
+		<TextWidget name="AdminTitle" left="0.01" top="0.01" width="0.98" height="0.05" text="QuestTrader Admin" />
+		<TextListboxWidget name="PlayerList" left="0.01" top="0.07" width="0.45" height="0.5" />
+		<MultilineTextWidget name="PlayerDetail" left="0.47" top="0.07" width="0.52" height="0.2" text="" />
+		<MultilineTextWidget name="LogView" left="0.47" top="0.29" width="0.52" height="0.3" text="" />
+		<TextWidget name="StatusText" left="0.01" top="0.59" width="0.98" height="0.04" text="" />
+		<ButtonWidget name="BtnReloadConfig" left="0.01" top="0.65" width="0.22" height="0.05" text="Reload Config" />
+		<ButtonWidget name="BtnRespawnNPCs" left="0.25" top="0.65" width="0.22" height="0.05" text="Respawn NPCs" />
+		<ButtonWidget name="BtnResetQuest" left="0.49" top="0.65" width="0.22" height="0.05" text="Reset Quest" />
+		<ButtonWidget name="BtnWipePlayer" left="0.73" top="0.65" width="0.22" height="0.05" text="Wipe Player" />
+		<ButtonWidget name="BtnClose" left="0.79" top="0.90" width="0.18" height="0.06" text="Close" />
+	</Widget>
+</root>

@@ -1,0 +1,9 @@
+<root>
+	<Widget name="QuestLogRoot" left="0.2" top="0.08" width="0.6" height="0.84">
+		<TextWidget name="LogTitle" left="0.01" top="0.01" width="0.98" height="0.05" text="Quest Log" />
+		<TextListboxWidget name="HistoryList" left="0.01" top="0.07" width="0.48" height="0.75" />
+		<MultilineTextWidget name="DetailText" left="0.51" top="0.07" width="0.48" height="0.55" text="" />
+		<TextListboxWidget name="LeaderboardList" left="0.51" top="0.63" width="0.48" height="0.19" />
+		<ButtonWidget name="BtnClose" left="0.79" top="0.86" width="0.18" height="0.06" text="Close" />
+	</Widget>
+</root>

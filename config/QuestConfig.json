@@ -1,0 +1,3164 @@
+{
+  "TraderNPCPositions": [
+    {
+      "id": "trader_001",
+      "name": "Viktor",
+      "position": [
+        11567.1,
+        0.0,
+        14739.3
+      ],
+      "orientation": [
+        151.0,
+        0.0,
+        0.0
+      ],
+      "model": "SurvivorM_Mirek",
+      "greeting": "Hello There. I have work for those brave enough.",
+      "farewell": "",
+      "outfit": [
+        "ChernarusSportShirt",
+        "CargoPants_Black",
+        "CombatBoots_Black",
+        "MilitaryBeret_CDF",
+        "PlateCarrierVest_Black"
+      ],
+      "greetings": [
+        "Hello There. I have work for those brave enough.",
+        "Back again? Good. I have more tasks for you.",
+        "You look capable. I might have something for you.",
+        "Glad you found me. Things are getting rough out there."
+      ]
+    },
+    {
+      "id": "trader_002",
+      "name": "The Collector",
+      "position": [
+        8077.46,
+        0.0,
+        9309.57
+      ],
+      "orientation": [
+        70.0,
+        0.0,
+        0.0
+      ],
+      "model": "SurvivorF_Eva",
+      "greeting": "Hello stranger. Got some tasks if you're interested.",
+      "farewell": "",
+      "outfit": [
+        "ChernarusSportShirt",
+        "CargoPants_Black",
+        "CombatBoots_Black",
+        "MilitaryBeret_CDF",
+        "PlateCarrierVest_Black"
+      ],
+      "greetings": [
+        "Hello stranger. Got some tasks if you're interested.",
+        "Ah, a visitor. I always need things collected.",
+        "You have the look of someone who can handle themselves.",
+        "Perfect timing. I was just thinking I needed help."
+      ]
+    },
+    {
+      "id": "trader_003",
+      "name": "Sister Emma",
+      "position": [
+        5201.93,
+        0.0,
+        8568.49
+      ],
+      "orientation": [
+        -75.0,
+        0.0,
+        0.0
+      ],
+      "model": "SurvivorF_Eva",
+      "greeting": "Bless you stranger. Can you help me?",
+      "farewell": "",
+      "outfit": [
+        "ChernarusSportShirt",
+        "CargoPants_Black",
+        "CombatBoots_Black",
+        "MilitaryBeret_CDF",
+        "PlateCarrierVest_Black"
+      ],
+      "greetings": [
+        "Bless you stranger. Can you help me?",
+        "God sent you at the right time. I need assistance.",
+        "Welcome traveller. These are dark times but there is always hope.",
+        "Peace be with you. I have tasks if you are willing."
+      ]
+    },
+    {
+      "id": "trader_004",
+      "name": "Fisher",
+      "position": [
+        13445.1,
+        0.0,
+        12134.3
+      ],
+      "orientation": [
+        -170.0,
+        0.0,
+        0.0
+      ],
+      "model": "SurvivorM_Seth",
+      "greeting": "G'day Mate. I need a few things handled. Are you looking for work?",
+      "farewell": "",
+      "outfit": [
+        "ChernarusSportShirt",
+        "CargoPants_Black",
+        "CombatBoots_Black",
+        "MilitaryBeret_CDF",
+        "PlateCarrierVest_Black"
+      ],
+      "greetings": [
+        "G'day Mate. I need a few things handled. Are you looking for work?",
+        "Crikey, you look like someone who gets things done!",
+        "Good to see another survivor. Got some jobs if you're up for it.",
+        "Ah, just the person I needed."
+      ]
+    }
+  ],
+  "Quests": [
+    {
+      "id": "quest_001",
+      "traderId": "trader_003",
+      "title": "Scavenger",
+      "description": "The camp is running low on medical supplies. Please help us.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "BandageDressing",
+          "requiredAmount": 4,
+          "description": "Collect 4 Bandages"
+        },
+        {
+          "itemClassName": "TetracyclineAntibiotics",
+          "requiredAmount": 12,
+          "description": "Collect 12 Tetracycline"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Glock19",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_Glock_15Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Bring me 4 Bandages and 12 Tetracycline.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_002",
+      "traderId": "trader_003",
+      "title": "Long Hunt",
+      "description": "We need food. Hunt some deer for the camp.",
+      "type": 1,
+      "repeatable": false,
+      "cooldownHours": 12,
+      "objectives": [
+        {
+          "entityClassName": "CervusElaphus",
+          "requiredAmount": 2,
+          "description": "Kill 2 Deer"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "HuntingKnife",
+          "amount": 1
+        },
+        {
+          "itemClassName": "AK_Suppressor",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Hunt 2 deer.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_003",
+      "traderId": "trader_003",
+      "title": "Wolves",
+      "description": "Wolves have been attacking our scouts. Thin out the herd.",
+      "type": 1,
+      "repeatable": false,
+      "cooldownHours": 24,
+      "objectives": [
+        {
+          "entityClassName": "CanisLupus",
+          "requiredAmount": 3,
+          "description": "Kill 3 Wolves"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Mosin9130",
+          "amount": 1
+        },
+        {
+          "itemClassName": "AmmoBox_762x54_20Rnd",
+          "amount": 4
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Kill 3 wolves.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_004",
+      "traderId": "trader_003",
+      "title": "Eradicate",
+      "description": "The wolf population has grown dangerously large. Eliminate 20 wolves to make the roads safer for survivors.",
+      "type": 1,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "entityClassName": "CanisLupus",
+          "requiredAmount": 20,
+          "description": "Kill 20 Wolves"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "M4A1",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_STANAG_60Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Wolves hunt in packs - stay sharp.",
+      "prerequisiteQuestIds": [
+        "quest_002"
+      ]
+    },
+    {
+      "id": "quest_005",
+      "traderId": "trader_002",
+      "title": "Arms Cache",
+      "description": "I collect rare weapons. I need a SVD for my collection.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "SVD",
+          "requiredAmount": 1,
+          "description": "Find an SVD"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "AKM",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_AKM_Drum75Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Find me an SVD!",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_006",
+      "traderId": "trader_001",
+      "title": "Delivery",
+      "description": "I have a package that needs to reach The Collector at Altar Radio Tower.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_002",
+      "deliveryItemClass": "CannabisSeedsPack",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "Glock19",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_Glock_15Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Take this package to The Collector at Altar Radio Tower.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_007",
+      "traderId": "trader_001",
+      "title": "Last Rites",
+      "description": "Sister Emma needs a Bible to perform last rites. Take this to her at the church in Kabanino",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_003",
+      "deliveryItemClass": "BookBible",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "AliceBag_Black",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_STANAG_60Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Take this Bible to Sister Emma in Kabanino church.",
+      "prerequisiteQuestIds": [
+        "quest_006"
+      ]
+    },
+    {
+      "id": "quest_008",
+      "traderId": "trader_001",
+      "title": "Delivery 3",
+      "description": "I Finally got Fisher's new Rod ready. Can you deliver it to Fisher at Black Lake?",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_004",
+      "deliveryItemClass": "FishingRod",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "MP5K",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_MP5_30Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Take this Fishing Rod to Fisher at Black Lake.",
+      "prerequisiteQuestIds": [
+        "quest_007"
+      ]
+    },
+    {
+      "id": "quest_009",
+      "traderId": "trader_004",
+      "title": "Lost Hooks",
+      "description": "I have lost my Fishing Hooks. Bring me 4 Fishing Hooks and 2 Netting so I can fish for the camp.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "Hook",
+          "requiredAmount": 4,
+          "description": "Collect 4 Fishing Hooks."
+        },
+        {
+          "itemClassName": "Netting",
+          "requiredAmount": 4,
+          "description": "Collect 1 Netting"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "ACOGOptic_6x",
+          "amount": 1
+        },
+        {
+          "itemClassName": "M14",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_M14_20Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Bring me 4 Fishing Hooks and 1 Netting.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_010",
+      "traderId": "trader_001",
+      "title": "Supply Run",
+      "description": "The Novo survivors are running low on food. Scavenge what you can from the surrounding area.",
+      "type": 0,
+      "repeatable": true,
+      "cooldownHours": 12,
+      "objectives": [
+        {
+          "itemClassName": "TunaCan",
+          "requiredAmount": 5,
+          "description": "Collect 5 Tuna Cans"
+        },
+        {
+          "itemClassName": "Rice",
+          "requiredAmount": 3,
+          "description": "Collect 3 Bags of Rice"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Deagle",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_Deagle_9rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Bring me 5 Tuna Cans and 3 bags of Rice. The camp needs feeding.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_011",
+      "traderId": "trader_001",
+      "title": "Armed Escort",
+      "description": "One of our runners was attacked on the road. We need someone to thin out the infected around the main road into Novo.",
+      "type": 1,
+      "repeatable": true,
+      "cooldownHours": 24,
+      "objectives": [
+        {
+          "entityClassName": "Zmb",
+          "requiredAmount": 15,
+          "description": "Kill 15 Infected"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Mag_STANAG_60Rnd",
+          "amount": 1
+        },
+        {
+          "itemClassName": "AmmoBox_556x45_20Rnd",
+          "amount": 3
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Clear the infected from the roads. Our people need to move safely.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_012",
+      "traderId": "trader_001",
+      "title": "The Lost Package",
+      "description": "A supply runner dropped a Walkie somewhere near Novo. I need someone to recover it and bring it back.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "PersonalRadio",
+          "requiredAmount": 1,
+          "description": "Find the Lost Walkie Talkie"
+        },
+        {
+          "itemClassName": "Battery9V",
+          "requiredAmount": 1,
+          "description": "Find 1 9V Battery"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "CZ75",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_CZ75_15Rnd",
+          "amount": 3
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Find the walkie talkie and batteries. We need to stay in contact with the other camps.",
+      "prerequisiteQuestIds": [
+        "quest_006"
+      ]
+    },
+    {
+      "id": "quest_013",
+      "traderId": "trader_001",
+      "title": "Medicine Run",
+      "description": "Viktor needs medical supplies delivered to Sister Emma at Kabanino church. She is treating wounded survivors.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_003",
+      "deliveryItemClass": "Epinephrine",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "SVD",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_SVD_10Rnd",
+          "amount": 1
+        },
+        {
+          "itemClassName": "AmmoBox_762x54_20Rnd",
+          "amount": 4
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Get this Epinephrine to Sister Emma quickly. Lives depend on it.",
+      "prerequisiteQuestIds": [
+        "quest_007"
+      ]
+    },
+    {
+      "id": "quest_014",
+      "traderId": "trader_001",
+      "title": "Boar Hunt",
+      "description": "The camp needs meat for the winter. Hunt some boar to help feed the Novo survivors.",
+      "type": 1,
+      "repeatable": true,
+      "cooldownHours": 12,
+      "objectives": [
+        {
+          "entityClassName": "SusScrofa",
+          "requiredAmount": 3,
+          "description": "Kill 3 Boars"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "HuntingKnife",
+          "amount": 1
+        },
+        {
+          "itemClassName": "CombatKnife",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Sword",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Hunt 3 boars. The survivors need meat on the table.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_015",
+      "traderId": "trader_003",
+      "title": "Gods Medicine",
+      "description": "Sister Emma is treating sick survivors but is running dangerously low on antibiotics and bandages.",
+      "type": 0,
+      "repeatable": true,
+      "cooldownHours": 24,
+      "objectives": [
+        {
+          "itemClassName": "TetracyclineAntibiotics",
+          "requiredAmount": 24,
+          "description": "Collect 24 Tetracycline"
+        },
+        {
+          "itemClassName": "BandageDressing",
+          "requiredAmount": 8,
+          "description": "Collect 8 Bandages"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Glock19",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_Glock_15Rnd",
+          "amount": 3
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "God bless you. Bring me those supplies - people are suffering.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_016",
+      "traderId": "trader_003",
+      "title": "The Missing",
+      "description": "A young survivor went missing hiking in the woods. Sister Emma fears the worst. Search the nearby area and find out what happened.",
+      "type": 1,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "entityClassName": "CanisLupus",
+          "requiredAmount": 5,
+          "description": "Kill 5 Wolves"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Ruger1022",
+          "amount": 1
+        },
+        {
+          "itemClassName": "HuntingOptic",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_Ruger1022_30Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "I fear wolves took him. Clear the pack so no one else suffers this fate.",
+      "prerequisiteQuestIds": [
+        "quest_003"
+      ]
+    },
+    {
+      "id": "quest_017",
+      "traderId": "trader_003",
+      "title": "Holy Water",
+      "description": "Sister Emma needs clean water to perform baptisms and tend to the wounded. Bring her water bottles.",
+      "type": 0,
+      "repeatable": true,
+      "cooldownHours": 6,
+      "objectives": [
+        {
+          "itemClassName": "WaterBottle",
+          "requiredAmount": 5,
+          "description": "Collect 5 Water Bottles"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Compass",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Flashlight",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Battery9V",
+          "amount": 1
+        },
+        {
+          "itemClassName": "CanOpener",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Bless you. Clean water is the foundation of healing.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_018",
+      "traderId": "trader_003",
+      "title": "Light in the Dark",
+      "description": "Sister Emma wants to light the church as a beacon of hope for survivors. She needs Small Gas Canisters and a Portable Gas Lamp.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "SmallGasCanister",
+          "requiredAmount": 16,
+          "description": "Find 4 Small Gas Canisters"
+        },
+        {
+          "itemClassName": "PortableGasLamp",
+          "requiredAmount": 1,
+          "description": "Find a Portable Gas Lamp"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "TortillaBag",
+          "amount": 1
+        },
+        {
+          "itemClassName": "CanOpener",
+          "amount": 1
+        },
+        {
+          "itemClassName": "PetrolLighter",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Lockpick",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "A light in the darkness gives people hope. Please find what I need.",
+      "prerequisiteQuestIds": [
+        "quest_001"
+      ]
+    },
+    {
+      "id": "quest_019",
+      "traderId": "trader_003",
+      "title": "Deer for the Poor",
+      "description": "Sister Emma feeds survivors who come to her church. She needs meat to keep them going.",
+      "type": 1,
+      "repeatable": true,
+      "cooldownHours": 12,
+      "objectives": [
+        {
+          "entityClassName": "CervusElaphus",
+          "requiredAmount": 4,
+          "description": "Kill 4 Deer"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "HuntingKnife",
+          "amount": 1
+        },
+        {
+          "itemClassName": "AK_Suppressor",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Hunt 4 deer. The hungry come to us and we must not turn them away.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_020",
+      "traderId": "trader_004",
+      "title": "Bait Run",
+      "description": "Fisher needs worms to bait his traps. Not glamorous work but essential for feeding the camps.",
+      "type": 0,
+      "repeatable": true,
+      "cooldownHours": 6,
+      "objectives": [
+        {
+          "itemClassName": "Worm",
+          "requiredAmount": 10,
+          "description": "Collect 10 Worms"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "HuntingKnife",
+          "amount": 1
+        },
+        {
+          "itemClassName": "HuntingBag_Hannah",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Rope",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "No bait, no fish. Simple as that mate.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_021",
+      "traderId": "trader_004",
+      "title": "Bear Trouble",
+      "description": "A bear has been raiding Fisher's camp and destroying his equipment. It needs to be dealt with.",
+      "type": 1,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "entityClassName": "UrsusArctos",
+          "requiredAmount": 1,
+          "description": "Kill the Bear"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Winchester70",
+          "amount": 1
+        },
+        {
+          "itemClassName": "HuntingOptic",
+          "amount": 1
+        },
+        {
+          "itemClassName": "AmmoBox_308Win_20Rnd",
+          "amount": 4
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Big bloke keeps smashing my gear. Sort him out would ya?",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_022",
+      "traderId": "trader_004",
+      "title": "Net Repair",
+      "description": "Fisher's nets are torn beyond repair. He needs materials to make new ones.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "Netting",
+          "requiredAmount": 3,
+          "description": "Collect 3 Netting"
+        },
+        {
+          "itemClassName": "Rope",
+          "requiredAmount": 4,
+          "description": "Collect 4 Rope"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "M68Optic",
+          "amount": 1
+        },
+        {
+          "itemClassName": "LeatherSewingKit",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Binoculars",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Without nets I can't feed anyone. Get me what I need.",
+      "prerequisiteQuestIds": [
+        "quest_009"
+      ]
+    },
+    {
+      "id": "quest_023",
+      "traderId": "trader_004",
+      "title": "Fuel Delivery",
+      "description": "Fisher needs fuel delivered to Viktor at Novo to power the camp generator.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_001",
+      "deliveryItemClass": "CanisterGasoline",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "M14",
+          "amount": 1
+        },
+        {
+          "itemClassName": "ACOGOptic_6x",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_M14_20Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Get that fuel to Viktor in Novo. The camp needs power.",
+      "prerequisiteQuestIds": [
+        "quest_009"
+      ]
+    },
+    {
+      "id": "quest_024",
+      "traderId": "trader_004",
+      "title": "Clearing the Shore",
+      "description": "Infected have been gathering along Fisher's fishing spots making it impossible to work safely.",
+      "type": 1,
+      "repeatable": false,
+      "cooldownHours": 24,
+      "objectives": [
+        {
+          "entityClassName": "Zmb",
+          "requiredAmount": 20,
+          "description": "Kill 20 Infected near the shore"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "FishingRod",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Hook",
+          "amount": 5
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Can't fish with those bloody infected about. Clear em out!",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_025",
+      "traderId": "trader_002",
+      "title": "Rare Find",
+      "description": "The Collector has heard rumours of a Winchester rifle somewhere in Chernarus. He will pay handsomely for it.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "Winchester70",
+          "requiredAmount": 1,
+          "description": "Find a Winchester Model 70"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "M4A1",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_STANAG_60Rnd",
+          "amount": 3
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "A Winchester in good condition. Do not damage it.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_026",
+      "traderId": "trader_002",
+      "title": "Pistol Collection",
+      "description": "The Collector wants to expand his sidearm collection. Bring him a variety of pistols.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "Glock19",
+          "requiredAmount": 1,
+          "description": "Find a Glock 19"
+        },
+        {
+          "itemClassName": "CZ75",
+          "requiredAmount": 1,
+          "description": "Find a CZ75"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "AKM",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_AKM_Drum75Rnd",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Two fine sidearms. Bring them to me undamaged.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_027",
+      "traderId": "trader_002",
+      "title": "Optics Wanted",
+      "description": "The Collector prizes fine optics almost as much as the guns themselves. Bring him what you can find.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "ACOGOptic_6x",
+          "requiredAmount": 1,
+          "description": "Find an ACOG 6x Optic"
+        },
+        {
+          "itemClassName": "PSO1Optic",
+          "requiredAmount": 1,
+          "description": "Find a PSO-1 Scope"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "SVD",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_SVD_10Rnd",
+          "amount": 2
+        },
+        {
+          "itemClassName": "AmmoBox_762x54_20Rnd",
+          "amount": 4
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Fine glass is hard to come by. Bring them to me carefully.",
+      "prerequisiteQuestIds": [
+        "quest_005"
+      ]
+    },
+    {
+      "id": "quest_028",
+      "traderId": "trader_002",
+      "title": "Suppressor Hunt",
+      "description": "The Collector wants suppressors for his collection. A quiet gun is a sophisticated gun.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "AK_Suppressor",
+          "requiredAmount": 1,
+          "description": "Find an AK Suppressor"
+        },
+        {
+          "itemClassName": "M4_Suppressor",
+          "requiredAmount": 1,
+          "description": "Find a M4 Suppressor"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "AKM",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_AKM_Drum75Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "Silence is golden. Find me those suppressors.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_029",
+      "traderId": "trader_002",
+      "title": "Ammo Stockpile",
+      "description": "The Collector needs ammunition stockpiled for the camp's defense. Scavenge as much as you can.",
+      "type": 0,
+      "repeatable": true,
+      "cooldownHours": 24,
+      "objectives": [
+        {
+          "itemClassName": "Ammo_9x19",
+          "requiredAmount": 60,
+          "description": "Collect 60 9mm Rounds"
+        },
+        {
+          "itemClassName": "Ammo_762x39",
+          "requiredAmount": 60,
+          "description": "Collect 60 7.62x39 Rounds"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "AKS74U_Green",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_AK74_30Rnd",
+          "amount": 2
+        },
+        {
+          "itemClassName": "AK_Suppressor",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "",
+      "acceptMessage": "We can never have too much ammunition. Get me what you can find.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_030",
+      "traderId": "trader_002",
+      "title": "Word from The Collector",
+      "description": "The Collector has a sealed letter for Viktor up north. She doesn't say what's in it, but she's offering good coin to see it delivered.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_001",
+      "deliveryItemClass": "Paper",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "AmmoBox_556x45Tracer_20Rnd",
+          "amount": 5
+        }
+      ],
+      "rewardMessage": "About time. I was starting to wonder.",
+      "acceptMessage": "Get this to Viktor. Don't read it.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_031",
+      "traderId": "trader_002",
+      "title": "Medicines for Emma",
+      "description": "The Collector has sourced some medical supplies she can't use herself. She wants them taken to Sister Emma - a rare act of generosity, or so she says.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_003",
+      "deliveryItemClass": "TetracyclineAntibiotics",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "Mag_Glock_15Rnd",
+          "amount": 2
+        },
+        {
+          "itemClassName": "Glock19",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "Bless you, and bless whoever sent these.",
+      "acceptMessage": "Take these to Sister Emma. She needs them more than I do.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_032",
+      "traderId": "trader_002",
+      "title": "Tackle for the Fisher",
+      "description": "The Collector has a crate of fishing hooks she acquired in a trade. No use to her. Fisher might want them.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_004",
+      "deliveryItemClass": "Hook",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "HuntingKnife",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "Finally, someone useful. Good on ya.",
+      "acceptMessage": "Get these hooks to Fisher down at the coast.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_033",
+      "traderId": "trader_003",
+      "title": "Message for Viktor",
+      "description": "Sister Emma has word of injured survivors near Viktor's camp. She needs this message delivered so he can send help.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_001",
+      "deliveryItemClass": "Paper",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "BandageDressing",
+          "amount": 2
+        },
+        {
+          "itemClassName": "TetracyclineAntibiotics",
+          "amount": 12
+        }
+      ],
+      "rewardMessage": "I'll send someone. You've done good work.",
+      "acceptMessage": "Take this to Viktor. People are counting on it.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_034",
+      "traderId": "trader_003",
+      "title": "A Gift for The Collector",
+      "description": "Emma found an old book she thinks The Collector would value. She'd rather it go to someone who appreciates it than rot here.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_002",
+      "deliveryItemClass": "BookTheRaven",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "BandageDressing",
+          "amount": 2
+        },
+        {
+          "itemClassName": "Morphine",
+          "amount": 4
+        }
+      ],
+      "rewardMessage": "How interesting. Emma always surprises me.",
+      "acceptMessage": "Take this to The Collector at the radio tower.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_035",
+      "traderId": "trader_003",
+      "title": "Food for the Coast",
+      "description": "Emma has canned food she can't store much longer. Fisher's camp on the coast could use it. A long walk, but the right thing to do.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_004",
+      "deliveryItemClass": "TunaCan",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "AmmoBox_762x39_20Rnd",
+          "amount": 4
+        }
+      ],
+      "rewardMessage": "Emma sent food? She's a good woman. Here, take this.",
+      "acceptMessage": "Get this food to Fisher before it spoils.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_036",
+      "traderId": "trader_004",
+      "title": "Message for Viktor",
+      "description": "Fisher has spotted military activity along the coast road. Viktor needs to know. Take this report north.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_001",
+      "deliveryItemClass": "Paper",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "AmmoBox_9x19_25rnd",
+          "amount": 5
+        }
+      ],
+      "rewardMessage": "Good intel. I'll put it to use.",
+      "acceptMessage": "Get this report to Viktor. The faster the better.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_037",
+      "traderId": "trader_004",
+      "title": "Salvage for The Collector",
+      "description": "Fisher pulled up something unusual in his nets - looks valuable. The Collector's the one to know what it is.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_002",
+      "deliveryItemClass": "Battery9V",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "FishingRod",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "Fascinating. Tell Fisher I owe him one.",
+      "acceptMessage": "Take this salvage to The Collector. She'll know its worth.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_038",
+      "traderId": "trader_004",
+      "title": "Supplies for Emma",
+      "description": "Fisher set aside some medical supplies from a wrecked boat. He's no use for them himself. Emma's camp needs them more.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_003",
+      "deliveryItemClass": "SalineBag",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "AmmoBox_762x54_20Rnd",
+          "amount": 4
+        }
+      ],
+      "rewardMessage": "God bless him. These will save lives.",
+      "acceptMessage": "Take these supplies to Sister Emma in Kabanino.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_039",
+      "traderId": "trader_001",
+      "title": "Intel for The Collector",
+      "description": "Viktor has gathered intelligence on survivor movements near the radio tower. The Collector trades in information - she'll pay well for this.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_002",
+      "deliveryItemClass": "Paper",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "Mag_AKM_30Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "Exactly what I needed. Viktor's sources are reliable as ever.",
+      "acceptMessage": "Get this to The Collector. Don't let anyone else read it.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_040",
+      "traderId": "trader_001",
+      "title": "Aid for Sister Emma",
+      "description": "Viktor intercepted a supply drop meant for Emma's camp. She needs these bandages. Get them to her.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_003",
+      "deliveryItemClass": "BandageDressing",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "Mag_STANAG_30Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "Viktor came through. Tell him I said thank you.",
+      "acceptMessage": "Take these bandages to Sister Emma.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_041",
+      "traderId": "trader_001",
+      "title": "Rope for Fisher",
+      "description": "Viktor has surplus rope from a cache he found. Fisher mentioned needing it for his nets. Make it happen.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_004",
+      "deliveryItemClass": "Rope",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "AmmoBox_308Win_20Rnd",
+          "amount": 5
+        }
+      ],
+      "rewardMessage": "Rope! Finally. Tell Viktor he's alright by me.",
+      "acceptMessage": "Take this rope down to Fisher at the coast.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_042",
+      "traderId": "trader_001",
+      "title": "Field Medic",
+      "description": "Viktor's fighters are burning through med supplies faster than he can stock them. He needs a resupply before the next patrol.",
+      "type": 0,
+      "repeatable": true,
+      "cooldownHours": 24,
+      "objectives": [
+        {
+          "itemClassName": "Morphine",
+          "requiredAmount": 3,
+          "description": "Collect 3 Morphine"
+        },
+        {
+          "itemClassName": "Epinephrine",
+          "requiredAmount": 3,
+          "description": "Collect 3 Epinephrine"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Mag_STANAG_30Rnd",
+          "amount": 3
+        }
+      ],
+      "rewardMessage": "Good. The men can move again.",
+      "acceptMessage": "Morphine and epinephrine. Don't come back without both.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_043",
+      "traderId": "trader_001",
+      "title": "Radio Check",
+      "description": "Two of Viktor's long range radios have gone dead. He needs fresh batteries and a replacement handset.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "Battery9V",
+          "requiredAmount": 4,
+          "description": "Collect 4 9V Batteries"
+        },
+        {
+          "itemClassName": "PersonalRadio",
+          "requiredAmount": 2,
+          "description": "Collect 2 Walkie Talkies"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "AKM",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_AKM_30Rnd",
+          "amount": 3
+        }
+      ],
+      "rewardMessage": "Finally we can reach the eastern scouts again.",
+      "acceptMessage": "Four batteries and two radios. Go.",
+      "prerequisiteQuestIds": [
+        "quest_012"
+      ]
+    },
+    {
+      "id": "quest_044",
+      "traderId": "trader_001",
+      "title": "Winter Cache",
+      "description": "Viktor is stockpiling for a hard winter. He needs non-perishables and cooking equipment secured now.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "TunaCan",
+          "requiredAmount": 10,
+          "description": "Collect 10 Tuna Cans"
+        },
+        {
+          "itemClassName": "BakedBeansCan",
+          "requiredAmount": 10,
+          "description": "Collect 10 Baked Bean Cans"
+        },
+        {
+          "itemClassName": "Pot",
+          "requiredAmount": 1,
+          "description": "Collect a Cooking Pot"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Deagle",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_Deagle_9rnd",
+          "amount": 3
+        }
+      ],
+      "rewardMessage": "That'll keep us fed through the cold.",
+      "acceptMessage": "Tins, more tins, and a pot. The camp needs feeding.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_045",
+      "traderId": "trader_001",
+      "title": "Fuel Reserve",
+      "description": "Viktor's camp generator is running low. Without fuel the lights go out and so does morale.",
+      "type": 0,
+      "repeatable": true,
+      "cooldownHours": 48,
+      "objectives": [
+        {
+          "itemClassName": "CanisterGasoline",
+          "requiredAmount": 2,
+          "description": "Collect 2 Jerry Cans of Fuel"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Mag_STANAG_60Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "Good. Keep the lights on a little longer.",
+      "acceptMessage": "Two full jerry cans. Don't bring me empties.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_046",
+      "traderId": "trader_001",
+      "title": "Tool Run",
+      "description": "Viktor needs basic tools to keep the camp maintained. A hacksaw and some duct tape will do for now.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "Hacksaw",
+          "requiredAmount": 1,
+          "description": "Find a Hacksaw"
+        },
+        {
+          "itemClassName": "DuctTape",
+          "requiredAmount": 3,
+          "description": "Collect 3 Duct Tape"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "CZ75",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_CZ75_15Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "These'll last us a while. Cheers.",
+      "acceptMessage": "A hacksaw and duct tape. Nothing fancy.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_047",
+      "traderId": "trader_001",
+      "title": "Clear the Road",
+      "description": "Infected have overrun the highway into Novo. Viktor's supply convoys can't get through. Clear a path.",
+      "type": 1,
+      "repeatable": true,
+      "cooldownHours": 24,
+      "objectives": [
+        {
+          "entityClassName": "Zmb",
+          "requiredAmount": 25,
+          "description": "Kill 25 Infected on the highway"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "AmmoBox_556x45_20Rnd",
+          "amount": 4
+        }
+      ],
+      "rewardMessage": "Road's clear. For now.",
+      "acceptMessage": "Twenty-five infected. The highway must stay open.",
+      "prerequisiteQuestIds": [
+        "quest_011"
+      ]
+    },
+    {
+      "id": "quest_048",
+      "traderId": "trader_001",
+      "title": "Deer Season",
+      "description": "The camp is hungry and Viktor isn't above asking for help putting meat on the table.",
+      "type": 1,
+      "repeatable": true,
+      "cooldownHours": 12,
+      "objectives": [
+        {
+          "entityClassName": "CervusElaphus",
+          "requiredAmount": 3,
+          "description": "Kill 3 Deer"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "HuntingKnife",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Rope",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "That'll feed people for a few days at least.",
+      "acceptMessage": "Three deer. The camp eats tonight.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_049",
+      "traderId": "trader_001",
+      "title": "Wolf Pack",
+      "description": "A large wolf pack has moved in near the northern road. Viktor needs them cleared before they start taking people.",
+      "type": 1,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "entityClassName": "CanisLupus",
+          "requiredAmount": 8,
+          "description": "Kill 8 Wolves"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Winchester70",
+          "amount": 1
+        },
+        {
+          "itemClassName": "AmmoBox_308Win_20Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "Good hunting. The road north is safer now.",
+      "acceptMessage": "Eight wolves. Don't let them scatter.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_050",
+      "traderId": "trader_001",
+      "title": "Boar Cull",
+      "description": "Boar are destroying the camp's vegetable plots. Viktor wants them gone before there's nothing left to harvest.",
+      "type": 1,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "entityClassName": "SusScrofa",
+          "requiredAmount": 5,
+          "description": "Kill 5 Boars"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "AKM",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_AKM_30Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "The gardens might just survive winter now.",
+      "acceptMessage": "Five boars. Don't leave any of them standing.",
+      "prerequisiteQuestIds": [
+        "quest_014"
+      ]
+    },
+    {
+      "id": "quest_051",
+      "traderId": "trader_001",
+      "title": "Parts for Fisher",
+      "description": "Viktor salvaged a boat engine part Fisher has been asking about for weeks. Time to get it to him.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_004",
+      "deliveryItemClass": "SparkPlug",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "Mag_AKM_Drum75Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "Bloody beauty! I've been waiting on that for months.",
+      "acceptMessage": "Get that spark plug to Fisher. He'll know what it's for.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_052",
+      "traderId": "trader_001",
+      "title": "Medicine Pledge",
+      "description": "Viktor promised Sister Emma medical grade supplies when they became available. They're available now.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_003",
+      "deliveryItemClass": "Epinephrine",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "SVD",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_SVD_10Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "Tell Viktor I'll remember this kindness.",
+      "acceptMessage": "Get the epinephrine to Emma. I gave her my word.",
+      "prerequisiteQuestIds": [
+        "quest_013"
+      ]
+    },
+    {
+      "id": "quest_053",
+      "traderId": "trader_001",
+      "title": "Map Drop",
+      "description": "Viktor has drawn up a detailed map of infected hotspots near Altar. The Collector will pay for that kind of intelligence.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_002",
+      "deliveryItemClass": "Paper",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "M4A1",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_STANAG_60Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "Viktor's intel is always worth the price.",
+      "acceptMessage": "Get that map to the Collector. Don't lose it.",
+      "prerequisiteQuestIds": [
+        "quest_039"
+      ]
+    },
+    {
+      "id": "quest_054",
+      "traderId": "trader_001",
+      "title": "Morale Package",
+      "description": "Viktor has put together a care package of luxuries for Fisher's hard-working crew. Weed, coffee, the small things that matter.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_004",
+      "deliveryItemClass": "Cannabis",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "AmmoBox_308Win_20Rnd",
+          "amount": 4
+        }
+      ],
+      "rewardMessage": "Haha! Viktor's a legend. The crew'll love this.",
+      "acceptMessage": "Take this to Fisher's camp. His people have earned it.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_055",
+      "traderId": "trader_001",
+      "title": "Scripture Run",
+      "description": "Viktor found a bible in a ransacked church. He's not a religious man but he knows Emma would want it.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_003",
+      "deliveryItemClass": "BookBible",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "AliceBag_Black",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_STANAG_30Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "Bless Viktor. He has more faith than he admits.",
+      "acceptMessage": "Take this bible to Emma. She'll put it to good use.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_056",
+      "traderId": "trader_001",
+      "title": "Data Cache",
+      "description": "Viktor recovered a military flash drive from a dead soldier. The Collector deals in this kind of thing.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_002",
+      "deliveryItemClass": "Battery9V",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "AKS74U_Green",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_AK74_30Rnd",
+          "amount": 3
+        }
+      ],
+      "rewardMessage": "Interesting. Very interesting. Good work.",
+      "acceptMessage": "Get this to the Collector. She'll know its value.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_057",
+      "traderId": "trader_002",
+      "title": "Night Vision",
+      "description": "The Collector has a buyer for military night optics. She needs them sourced quietly and quickly.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "KazuarOptic",
+          "requiredAmount": 1,
+          "description": "Find a Night Vision Scope"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "SVD",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_SVD_10Rnd",
+          "amount": 3
+        },
+        {
+          "itemClassName": "PSO1Optic",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "Perfect condition. Exactly what I needed.",
+      "acceptMessage": "A PNV-10T. Don't damage the optics.",
+      "prerequisiteQuestIds": [
+        "quest_027"
+      ]
+    },
+    {
+      "id": "quest_058",
+      "traderId": "trader_002",
+      "title": "Blade Collection",
+      "description": "The Collector has recently developed an interest in edged weapons. Bring her a selection.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "SteakKnife",
+          "requiredAmount": 1,
+          "description": "Find a Steak Knife"
+        },
+        {
+          "itemClassName": "CombatKnife",
+          "requiredAmount": 1,
+          "description": "Find a Combat Knife"
+        },
+        {
+          "itemClassName": "Sword",
+          "requiredAmount": 1,
+          "description": "Find a Sword"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "M4A1",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_STANAG_30Rnd",
+          "amount": 3
+        }
+      ],
+      "rewardMessage": "A fine collection. Thank you.",
+      "acceptMessage": "Three blades. Condition matters.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_059",
+      "traderId": "trader_002",
+      "title": "Surplus Ammo",
+      "description": "The Collector needs to restock her trading inventory. Common calibres \u2014 the kind everyone always needs.",
+      "type": 0,
+      "repeatable": true,
+      "cooldownHours": 24,
+      "objectives": [
+        {
+          "itemClassName": "Ammo_556x45",
+          "requiredAmount": 60,
+          "description": "Collect 60 5.56 Rounds"
+        },
+        {
+          "itemClassName": "Ammo_308Win",
+          "requiredAmount": 40,
+          "description": "Collect 40 .308 Rounds"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "AKM",
+          "amount": 1
+        },
+        {
+          "itemClassName": "AK_Suppressor",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "Good. These will move fast.",
+      "acceptMessage": "Two calibres, as much as you can find.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_060",
+      "traderId": "trader_002",
+      "title": "Field Rations",
+      "description": "The Collector needs provisions for a long stay at the tower. Nothing fancy \u2014 just enough to keep going.",
+      "type": 0,
+      "repeatable": true,
+      "cooldownHours": 12,
+      "objectives": [
+        {
+          "itemClassName": "TunaCan",
+          "requiredAmount": 5,
+          "description": "Collect 5 Tuna Cans"
+        },
+        {
+          "itemClassName": "TacticalBaconCan",
+          "requiredAmount": 5,
+          "description": "Collect 5 Cans of Bacon"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Mag_Glock_15Rnd",
+          "amount": 3
+        },
+        {
+          "itemClassName": "Glock19",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "That'll keep me going for another week.",
+      "acceptMessage": "Food and and more Food. The usual.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_061",
+      "traderId": "trader_002",
+      "title": "Map Collection",
+      "description": "The Collector prizes local maps. She uses them to track survivor movements and supply routes.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "Map",
+          "requiredAmount": 1,
+          "description": "Find a Map"
+        },
+        {
+          "itemClassName": "Compass",
+          "requiredAmount": 1,
+          "description": "Find a Compass"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Binoculars",
+          "amount": 1
+        },
+        {
+          "itemClassName": "ACOGOptic_6x",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "Navigation tools. Always useful.",
+      "acceptMessage": "A map and a compass. Don't fold the map badly.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_062",
+      "traderId": "trader_002",
+      "title": "Tower Defence",
+      "description": "Infected have been clustering around the base of the radio tower making resupply runs dangerous. Clear them out.",
+      "type": 1,
+      "repeatable": true,
+      "cooldownHours": 24,
+      "objectives": [
+        {
+          "entityClassName": "Zmb",
+          "requiredAmount": 20,
+          "description": "Kill 20 Infected near the radio tower"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Mag_AKM_30Rnd",
+          "amount": 3
+        }
+      ],
+      "rewardMessage": "Good. I can hear myself think again.",
+      "acceptMessage": "Twenty infected. The approach to the tower must be clear.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_063",
+      "traderId": "trader_002",
+      "title": "Pest Control",
+      "description": "Wolves have been circling the radio tower at night. The Collector doesn't sleep well with howling outside.",
+      "type": 1,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "entityClassName": "CanisLupus",
+          "requiredAmount": 4,
+          "description": "Kill 4 Wolves near Altar"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "AKM",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_AKM_30Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "Quiet at last. Good work.",
+      "acceptMessage": "Four wolves. Keep them away from my tower.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_064",
+      "traderId": "trader_002",
+      "title": "Trophy Hunt",
+      "description": "The Collector wants a bear pelt for her collection. She won't say why. She never says why.",
+      "type": 1,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "entityClassName": "UrsusArctos",
+          "requiredAmount": 1,
+          "description": "Kill a Bear"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Winchester70",
+          "amount": 1
+        },
+        {
+          "itemClassName": "HuntingOptic",
+          "amount": 1
+        },
+        {
+          "itemClassName": "AmmoBox_308Win_20Rnd",
+          "amount": 4
+        }
+      ],
+      "rewardMessage": "Excellent. Don't ask what I need it for.",
+      "acceptMessage": "One bear. Try not to ruin the pelt.",
+      "prerequisiteQuestIds": [
+        "quest_025"
+      ]
+    },
+    {
+      "id": "quest_065",
+      "traderId": "trader_002",
+      "title": "Trade Goods for Viktor",
+      "description": "The Collector has surplus weapons parts Viktor can use. She's willing to trade \u2014 for a favour later.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_001",
+      "deliveryItemClass": "WeaponCleaningKit",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "Mag_SVD_10Rnd",
+          "amount": 2
+        },
+        {
+          "itemClassName": "AmmoBox_762x54_20Rnd",
+          "amount": 4
+        }
+      ],
+      "rewardMessage": "Tell her the debt is noted.",
+      "acceptMessage": "Take these cleaning kits to Viktor. He'll owe me one.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_066",
+      "traderId": "trader_002",
+      "title": "Rare Book",
+      "description": "The Collector acquired a book she thinks Emma would treasure more than herself. A rare moment of generosity.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_003",
+      "deliveryItemClass": "BookTheRaven",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "PSO1Optic",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_SVD_10Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "She sent me a book? I shall treasure it.",
+      "acceptMessage": "Take this to Emma. It deserves to be read, not sit on a shelf.",
+      "prerequisiteQuestIds": [
+        "quest_034"
+      ]
+    },
+    {
+      "id": "quest_067",
+      "traderId": "trader_002",
+      "title": "Fishing Gear",
+      "description": "The Collector traded for fishing equipment she has no use for. Fisher might as well have it.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_004",
+      "deliveryItemClass": "FishingRod",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "M68Optic",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_AKM_Drum75Rnd",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "A good rod! She does alright, that Collector.",
+      "acceptMessage": "Take this rod to Fisher. It's no use gathering dust here.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_068",
+      "traderId": "trader_002",
+      "title": "Viktor's Intel",
+      "description": "The Collector has compiled a dossier on survivor camp locations Viktor doesn't know about yet. Knowledge is currency.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_001",
+      "deliveryItemClass": "Paper",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "M4A1",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_STANAG_60Rnd",
+          "amount": 3
+        }
+      ],
+      "rewardMessage": "This changes everything. Tell her we're square.",
+      "acceptMessage": "Get this dossier to Viktor. He'll want to act fast.",
+      "prerequisiteQuestIds": [
+        "quest_030"
+      ]
+    },
+    {
+      "id": "quest_069",
+      "traderId": "trader_002",
+      "title": "Medical Drop",
+      "description": "The Collector has sourced saline bags from a crashed ambulance. Emma's clinic needs them urgently.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_003",
+      "deliveryItemClass": "SalineBag",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "AKS74U_Green",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_AK74_30Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "These will save lives tonight. Thank you.",
+      "acceptMessage": "Get these saline bags to Emma. People are waiting.",
+      "prerequisiteQuestIds": [
+        "quest_031"
+      ]
+    },
+    {
+      "id": "quest_070",
+      "traderId": "trader_003",
+      "title": "Healing Hands",
+      "description": "Emma's clinic is overwhelmed with infected wounds. She desperately needs antiseptics and suture kits.",
+      "type": 0,
+      "repeatable": true,
+      "cooldownHours": 24,
+      "objectives": [
+        {
+          "itemClassName": "Disinfectant",
+          "requiredAmount": 3,
+          "description": "Collect 3 Disinfectant Sprays"
+        },
+        {
+          "itemClassName": "SewingKit",
+          "requiredAmount": 2,
+          "description": "Collect 2 Sewing Kits"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Compass",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Flashlight",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "God bless you. These wounds won't heal themselves.",
+      "acceptMessage": "Disinfectant and sewing kits. Every one matters.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_071",
+      "traderId": "trader_003",
+      "title": "Warm Shelter",
+      "description": "Winter is coming and Emma's survivors need clothing. Any warm gear you can find will help.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "WoolCoat",
+          "requiredAmount": 2,
+          "description": "Find 2 Wool Coats"
+        },
+        {
+          "itemClassName": "Balaclava",
+          "requiredAmount": 3,
+          "description": "Find 3 Balaclavas"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Mosin9130",
+          "amount": 1
+        },
+        {
+          "itemClassName": "AmmoBox_762x54_20Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "Warm hearts and warm bodies. Thank you.",
+      "acceptMessage": "Coats and balaclavas. The cold kills as surely as anything else.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_072",
+      "traderId": "trader_003",
+      "title": "Safe Passage",
+      "description": "Emma needs rope and wire to rig warning systems around the church perimeter to protect the sick and elderly inside.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "Rope",
+          "requiredAmount": 5,
+          "description": "Collect 5 Rope"
+        },
+        {
+          "itemClassName": "BarbedWire",
+          "requiredAmount": 2,
+          "description": "Collect 2 Barbed Wire"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Ruger1022",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_Ruger1022_30Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "Now they will hear anything that comes in the night.",
+      "acceptMessage": "Rope and barbed wire. The church must be safe.",
+      "prerequisiteQuestIds": [
+        "quest_001"
+      ]
+    },
+    {
+      "id": "quest_073",
+      "traderId": "trader_003",
+      "title": "Cooking for Many",
+      "description": "Emma feeds anyone who comes to the church. She needs cooking supplies to keep the kitchen running.",
+      "type": 0,
+      "repeatable": true,
+      "cooldownHours": 12,
+      "objectives": [
+        {
+          "itemClassName": "Rice",
+          "requiredAmount": 5,
+          "description": "Collect 5 Bags of Rice"
+        },
+        {
+          "itemClassName": "Pot",
+          "requiredAmount": 1,
+          "description": "Find a Cooking Pot"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "BandageDressing",
+          "amount": 4
+        },
+        {
+          "itemClassName": "TetracyclineAntibiotics",
+          "amount": 12
+        }
+      ],
+      "rewardMessage": "Many mouths fed tonight because of you.",
+      "acceptMessage": "Rice and a pot. Simple needs, great importance.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_074",
+      "traderId": "trader_003",
+      "title": "Pain Relief",
+      "description": "Emma's patients are suffering without proper pain medication. Any morphine or epinephrine found must reach them.",
+      "type": 0,
+      "repeatable": true,
+      "cooldownHours": 48,
+      "objectives": [
+        {
+          "itemClassName": "Morphine",
+          "requiredAmount": 4,
+          "description": "Collect 4 Morphine Doses"
+        },
+        {
+          "itemClassName": "Epinephrine",
+          "requiredAmount": 2,
+          "description": "Collect 2 Epinephrine"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Glock19",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_Glock_15Rnd",
+          "amount": 3
+        }
+      ],
+      "rewardMessage": "You have eased much suffering today.",
+      "acceptMessage": "Morphine and epinephrine. People are in pain.",
+      "prerequisiteQuestIds": [
+        "quest_015"
+      ]
+    },
+    {
+      "id": "quest_075",
+      "traderId": "trader_003",
+      "title": "Protect the Flock",
+      "description": "Infected have been drawn to the church by the sounds of survivors. Emma needs them cleared before someone gets hurt.",
+      "type": 1,
+      "repeatable": true,
+      "cooldownHours": 24,
+      "objectives": [
+        {
+          "entityClassName": "Zmb",
+          "requiredAmount": 15,
+          "description": "Kill 15 Infected near the church"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "BandageDressing",
+          "amount": 4
+        },
+        {
+          "itemClassName": "Morphine",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "They can rest safely again. Thank you.",
+      "acceptMessage": "Clear those infected from around the church. My people are frightened.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_076",
+      "traderId": "trader_003",
+      "title": "The Pack Returns",
+      "description": "The wolf pack that took a survivor has been spotted again nearby. Emma won't rest until they're dealt with.",
+      "type": 1,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "entityClassName": "CanisLupus",
+          "requiredAmount": 7,
+          "description": "Kill 7 Wolves"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "M4A1",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_STANAG_30Rnd",
+          "amount": 3
+        }
+      ],
+      "rewardMessage": "May they rest in peace. All of them.",
+      "acceptMessage": "Seven wolves. End this.",
+      "prerequisiteQuestIds": [
+        "quest_016"
+      ]
+    },
+    {
+      "id": "quest_077",
+      "traderId": "trader_003",
+      "title": "Mercy Kill",
+      "description": "A badly wounded bear has been circling the village, dangerous and suffering. Emma asks that you end its misery.",
+      "type": 1,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "entityClassName": "UrsusArctos",
+          "requiredAmount": 1,
+          "description": "Put the bear out of its misery"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "HuntingOptic",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Winchester70",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "A mercy. For the bear and for us.",
+      "acceptMessage": "End its suffering. It's the compassionate thing to do.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_078",
+      "traderId": "trader_003",
+      "title": "Word to Fisher",
+      "description": "Emma has heard Fisher's camp took losses in a bear attack. She wants to send her condolences and some supplies.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_004",
+      "deliveryItemClass": "BandageDressing",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "TetracyclineAntibiotics",
+          "amount": 12
+        },
+        {
+          "itemClassName": "Morphine",
+          "amount": 4
+        }
+      ],
+      "rewardMessage": "Emma sent this? She's a saint, she is.",
+      "acceptMessage": "Take these bandages to Fisher. Tell him we're thinking of his people.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_079",
+      "traderId": "trader_003",
+      "title": "Candle for Viktor",
+      "description": "Emma wants Viktor to know she prays for his camp. She's sending a small token \u2014 and a message she won't entrust to anyone else.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_001",
+      "deliveryItemClass": "Paper",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "Mag_STANAG_60Rnd",
+          "amount": 2
+        },
+        {
+          "itemClassName": "BandageDressing",
+          "amount": 4
+        }
+      ],
+      "rewardMessage": "Tell her I appreciate it. More than she knows.",
+      "acceptMessage": "Take this letter to Viktor. It's personal.",
+      "prerequisiteQuestIds": [
+        "quest_033"
+      ]
+    },
+    {
+      "id": "quest_080",
+      "traderId": "trader_003",
+      "title": "Offering for The Collector",
+      "description": "Emma has prayed on it and decided The Collector deserves a gesture of goodwill, whatever her reputation.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_002",
+      "deliveryItemClass": "BookBible",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "BandageDressing",
+          "amount": 4
+        },
+        {
+          "itemClassName": "Epinephrine",
+          "amount": 3
+        }
+      ],
+      "rewardMessage": "A bible. How unexpectedly touching.",
+      "acceptMessage": "Take this to The Collector. Even she deserves grace.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_081",
+      "traderId": "trader_003",
+      "title": "Saline for the Shore",
+      "description": "Fisher's crew get injured often working the water. Emma wants to send saline bags to help them manage.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_004",
+      "deliveryItemClass": "SalineBag",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "AmmoBox_762x54_20Rnd",
+          "amount": 4
+        },
+        {
+          "itemClassName": "Mosin9130",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "Emma looks out for us. Good woman.",
+      "acceptMessage": "Get these saline bags to Fisher's crew on the coast.",
+      "prerequisiteQuestIds": [
+        "quest_038"
+      ]
+    },
+    {
+      "id": "quest_082",
+      "traderId": "trader_003",
+      "title": "Church Records",
+      "description": "Emma has documented the names of every survivor who has passed through or died at the church. Viktor asked for a copy for the camp records.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_001",
+      "deliveryItemClass": "Paper",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "Mag_STANAG_30Rnd",
+          "amount": 3
+        },
+        {
+          "itemClassName": "Disinfectant",
+          "amount": 3
+        }
+      ],
+      "rewardMessage": "These names deserve to be remembered.",
+      "acceptMessage": "Take these records to Viktor. Every name matters.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_083",
+      "traderId": "trader_004",
+      "title": "Net and Line",
+      "description": "Fisher needs fishing line and replacement netting. Without them half his traps are useless.",
+      "type": 0,
+      "repeatable": true,
+      "cooldownHours": 12,
+      "objectives": [
+        {
+          "itemClassName": "Netting",
+          "requiredAmount": 2,
+          "description": "Collect 2 Netting"
+        },
+        {
+          "itemClassName": "Hook",
+          "requiredAmount": 5,
+          "description": "Collect 5 Fishing Hooks"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Rope",
+          "amount": 3
+        },
+        {
+          "itemClassName": "HuntingKnife",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "Now we're back in business.",
+      "acceptMessage": "Netting and hooks. Simple as that.",
+      "prerequisiteQuestIds": [
+        "quest_022"
+      ]
+    },
+    {
+      "id": "quest_084",
+      "traderId": "trader_004",
+      "title": "Boat Repair",
+      "description": "Fisher's rowboat took damage in a storm. He needs materials to patch it up before the next fishing run.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "DuctTape",
+          "requiredAmount": 4,
+          "description": "Collect 4 Duct Tape"
+        },
+        {
+          "itemClassName": "Netting",
+          "requiredAmount": 2,
+          "description": "Collect 2 Netting"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "FishingRod",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Hook",
+          "amount": 8
+        }
+      ],
+      "rewardMessage": "She'll float again. Good on ya.",
+      "acceptMessage": "Duct tape and netting. The boat needs it more than you do.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_085",
+      "traderId": "trader_004",
+      "title": "Camp Supplies",
+      "description": "Fisher's camp is running low on basics. Food and water for the crew working the shore.",
+      "type": 0,
+      "repeatable": true,
+      "cooldownHours": 24,
+      "objectives": [
+        {
+          "itemClassName": "TunaCan",
+          "requiredAmount": 6,
+          "description": "Collect 6 Tuna Cans"
+        },
+        {
+          "itemClassName": "WaterBottle",
+          "requiredAmount": 4,
+          "description": "Collect 4 Water Bottles"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Hook",
+          "amount": 6
+        },
+        {
+          "itemClassName": "Rope",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "That'll keep the crew going. Cheers.",
+      "acceptMessage": "Tins and water. My crew works hard and needs feeding.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_086",
+      "traderId": "trader_004",
+      "title": "Shore Salvage",
+      "description": "Fisher spotted wreckage washed up along the coast. He needs someone to salvage what's useful before the tide takes it.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "CanisterGasoline",
+          "requiredAmount": 1,
+          "description": "Find a Fuel Canister"
+        },
+        {
+          "itemClassName": "Battery9V",
+          "requiredAmount": 2,
+          "description": "Find 2 Batteries"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "M14",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_M14_20Rnd",
+          "amount": 2
+        }
+      ],
+      "rewardMessage": "Good salvage. That wreck had plenty left.",
+      "acceptMessage": "Fuel and batteries from the wreck. Don't drown.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_087",
+      "traderId": "trader_004",
+      "title": "Storm Prep",
+      "description": "A storm is coming in off the coast. Fisher needs supplies secured before it hits.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "Rope",
+          "requiredAmount": 6,
+          "description": "Collect 6 Rope"
+        },
+        {
+          "itemClassName": "DuctTape",
+          "requiredAmount": 3,
+          "description": "Collect 3 Duct Tape"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "ACOGOptic_6x",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Binoculars",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "We'll ride the storm out now. Cheers.",
+      "acceptMessage": "Rope and duct tape. Everything needs tying down.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_088",
+      "traderId": "trader_004",
+      "title": "Shore Clearance",
+      "description": "Infected are washing up along the beach from somewhere offshore. Fisher's crew can't work with them stumbling about.",
+      "type": 1,
+      "repeatable": true,
+      "cooldownHours": 24,
+      "objectives": [
+        {
+          "entityClassName": "Zmb",
+          "requiredAmount": 20,
+          "description": "Kill 20 Infected on the shoreline"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "FishingRod",
+          "amount": 1
+        },
+        {
+          "itemClassName": "AmmoBox_308Win_20Rnd",
+          "amount": 4
+        }
+      ],
+      "rewardMessage": "Coast is clear. For now anyway.",
+      "acceptMessage": "Twenty infected. The shore belongs to us not them.",
+      "prerequisiteQuestIds": [
+        "quest_024"
+      ]
+    },
+    {
+      "id": "quest_089",
+      "traderId": "trader_004",
+      "title": "Wolf at the Water",
+      "description": "Wolves have started hunting along the shoreline at dusk. Fisher's night crew are too exposed.",
+      "type": 1,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "entityClassName": "CanisLupus",
+          "requiredAmount": 5,
+          "description": "Kill 5 Wolves near the shore"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Winchester70",
+          "amount": 1
+        },
+        {
+          "itemClassName": "AmmoBox_308Win_20Rnd",
+          "amount": 3
+        }
+      ],
+      "rewardMessage": "The crew can work nights again. Good shot.",
+      "acceptMessage": "Five wolves. The coast road at dusk is not safe right now.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_090",
+      "traderId": "trader_004",
+      "title": "Big Game",
+      "description": "A massive boar has been raiding Fisher's food stores. It's too big and aggressive to chase off. It needs to be put down.",
+      "type": 1,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "entityClassName": "SusScrofa",
+          "requiredAmount": 1,
+          "description": "Kill the large Boar raiding the camp"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "M14",
+          "amount": 1
+        },
+        {
+          "itemClassName": "ACOGOptic_6x",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "That boar was the size of a car. Unreal.",
+      "acceptMessage": "One boar. Big one. You'll know him when you see him.",
+      "prerequisiteQuestIds": [
+        "quest_021"
+      ]
+    },
+    {
+      "id": "quest_091",
+      "traderId": "trader_004",
+      "title": "Viktor's Order",
+      "description": "Fisher has been holding a weapons cache Viktor ordered weeks ago. Time to get it delivered.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_001",
+      "deliveryItemClass": "WeaponCleaningKit",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "Mag_M14_20Rnd",
+          "amount": 3
+        },
+        {
+          "itemClassName": "AmmoBox_308Win_20Rnd",
+          "amount": 3
+        }
+      ],
+      "rewardMessage": "Finally. Tell Fisher the next order's on me.",
+      "acceptMessage": "Get this cleaning kit up to Viktor. He's been waiting long enough.",
+      "prerequisiteQuestIds": [
+        "quest_023"
+      ]
+    },
+    {
+      "id": "quest_092",
+      "traderId": "trader_004",
+      "title": "Emma's Medicine",
+      "description": "Fisher pulled medical supplies from a sunken boat. He has no use for them but Emma's clinic does.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_003",
+      "deliveryItemClass": "Morphine",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "AmmoBox_762x54_20Rnd",
+          "amount": 4
+        },
+        {
+          "itemClassName": "Mosin9130",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "God bless Fisher. These will go straight to the patients.",
+      "acceptMessage": "Get that morphine to Emma's clinic. Don't drop it.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_093",
+      "traderId": "trader_004",
+      "title": "Collector's Find",
+      "description": "Fisher's nets pulled up something strange \u2014 looks like pre-outbreak tech. The Collector will know what it's worth.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_002",
+      "deliveryItemClass": "Battery9V",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "FishingRod",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Hook",
+          "amount": 10
+        }
+      ],
+      "rewardMessage": "Fascinating. Tell Fisher I'll be in touch.",
+      "acceptMessage": "Take this to the Collector. She pays well for unusual finds.",
+      "prerequisiteQuestIds": [
+        "quest_037"
+      ]
+    },
+    {
+      "id": "quest_094",
+      "traderId": "trader_004",
+      "title": "Rope for Viktor",
+      "description": "Viktor's camp needs rope to secure their supply drops and Viktor asked Fisher to source some.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_001",
+      "deliveryItemClass": "Rope",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "AmmoBox_9x19_25rnd",
+          "amount": 6
+        },
+        {
+          "itemClassName": "CZ75",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "Good. We've been tying everything down with bootlaces.",
+      "acceptMessage": "Get this rope up to Viktor's camp.",
+      "prerequisiteQuestIds": [
+        "quest_041"
+      ]
+    },
+    {
+      "id": "quest_095",
+      "traderId": "trader_004",
+      "title": "Parts for The Collector",
+      "description": "Fisher has salvaged electronic components the Collector has been looking for. A good trade opportunity.",
+      "type": 2,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "deliveryTraderId": "trader_002",
+      "deliveryItemClass": "SparkPlug",
+      "objectives": [],
+      "rewards": [
+        {
+          "itemClassName": "AmmoBox_9x19_25rnd",
+          "amount": 6
+        },
+        {
+          "itemClassName": "Mag_Glock_15Rnd",
+          "amount": 3
+        }
+      ],
+      "rewardMessage": "Exactly what I needed. Fisher has good eyes.",
+      "acceptMessage": "Take these parts to the Collector. She's been looking for them.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_096",
+      "traderId": "trader_001",
+      "title": "Survivor Count",
+      "description": "Viktor needs a headcount of survivors in nearby towns. He's tracking population shifts to plan supply routes.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "Paper",
+          "requiredAmount": 3,
+          "description": "Collect 3 Paper (survey notes)"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Deagle",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_Deagle_9rnd",
+          "amount": 3
+        }
+      ],
+      "rewardMessage": "Good intelligence. This changes our routing.",
+      "acceptMessage": "Three survey notes \u2014 one per town. Note what you see.",
+      "prerequisiteQuestIds": []
+    },
+    {
+      "id": "quest_097",
+      "traderId": "trader_002",
+      "title": "Collector's Bounty",
+      "description": "The Collector is offering a standing bounty on military-grade weapons. She has a particular buyer in mind.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "AKM",
+          "requiredAmount": 1,
+          "description": "Find an AKM"
+        },
+        {
+          "itemClassName": "M4A1",
+          "requiredAmount": 1,
+          "description": "Find an M4A1"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "SVD",
+          "amount": 1
+        },
+        {
+          "itemClassName": "PSO1Optic",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_SVD_10Rnd",
+          "amount": 3
+        }
+      ],
+      "rewardMessage": "Exactly what the buyer wanted. Exceptional work.",
+      "acceptMessage": "An AKM and an M4. Undamaged if possible.",
+      "prerequisiteQuestIds": [
+        "quest_026"
+      ]
+    },
+    {
+      "id": "quest_098",
+      "traderId": "trader_003",
+      "title": "The Long Vigil",
+      "description": "Emma has kept a vigil over a dying survivor for three days. She needs supplies to continue and someone to check the perimeter.",
+      "type": 1,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "entityClassName": "Zmb",
+          "requiredAmount": 10,
+          "description": "Kill 10 Infected around the church"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "Ruger1022",
+          "amount": 1
+        },
+        {
+          "itemClassName": "HuntingOptic",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_Ruger1022_30Rnd",
+          "amount": 3
+        }
+      ],
+      "rewardMessage": "He passed peacefully. Thank you for keeping us safe.",
+      "acceptMessage": "Ten infected around the church. Let him die in peace.",
+      "prerequisiteQuestIds": [
+        "quest_075"
+      ]
+    },
+    {
+      "id": "quest_099",
+      "traderId": "trader_004",
+      "title": "The Final Haul",
+      "description": "Fisher is planning one last massive fishing run before winter. He needs everything in order \u2014 bait, gear, and a clear shore.",
+      "type": 1,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "entityClassName": "Zmb",
+          "requiredAmount": 30,
+          "description": "Kill 30 Infected along the coast"
+        },
+        {
+          "entityClassName": "CanisLupus",
+          "requiredAmount": 3,
+          "description": "Kill 3 Wolves on the shore road"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "M14",
+          "amount": 1
+        },
+        {
+          "itemClassName": "ACOGOptic_6x",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_M14_20Rnd",
+          "amount": 4
+        }
+      ],
+      "rewardMessage": "Right then. Let's fish.",
+      "acceptMessage": "Thirty infected and three wolves. Clear the whole coast.",
+      "prerequisiteQuestIds": [
+        "quest_088"
+      ]
+    },
+    {
+      "id": "quest_100",
+      "traderId": "trader_002",
+      "title": "The Grand Collection",
+      "description": "The Collector's life work \u2014 assembling the finest weapons collection in Chernarus. She needs one of everything to complete it.",
+      "type": 0,
+      "repeatable": false,
+      "cooldownHours": 0,
+      "objectives": [
+        {
+          "itemClassName": "SVD",
+          "requiredAmount": 1,
+          "description": "Find an SVD"
+        },
+        {
+          "itemClassName": "M4A1",
+          "requiredAmount": 1,
+          "description": "Find an M4A1"
+        },
+        {
+          "itemClassName": "AKM",
+          "requiredAmount": 1,
+          "description": "Find an AKM"
+        },
+        {
+          "itemClassName": "Winchester70",
+          "requiredAmount": 1,
+          "description": "Find a Winchester 70"
+        }
+      ],
+      "rewards": [
+        {
+          "itemClassName": "M4A1",
+          "amount": 1
+        },
+        {
+          "itemClassName": "SVD",
+          "amount": 1
+        },
+        {
+          "itemClassName": "Mag_STANAG_60Rnd",
+          "amount": 4
+        },
+        {
+          "itemClassName": "Mag_SVD_10Rnd",
+          "amount": 4
+        },
+        {
+          "itemClassName": "PSO1Optic",
+          "amount": 1
+        },
+        {
+          "itemClassName": "ACOGOptic_6x",
+          "amount": 1
+        }
+      ],
+      "rewardMessage": "Magnificent. The collection is complete.",
+      "acceptMessage": "The four pillars of any serious collection. Do not damage them.",
+      "prerequisiteQuestIds": [
+        "quest_057",
+        "quest_027",
+        "quest_025"
+      ]
+    }
+  ],
+  "Settings": {
+    "interactionDistance": 2.0,
+    "showQuestMarkersOnMap": true,
+    "notifyOnKillProgress": true,
+    "debugLogging": false
+  }
+}

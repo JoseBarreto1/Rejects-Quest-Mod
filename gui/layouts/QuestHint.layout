@@ -1,0 +1,25 @@
+PanelWidgetClass root {
+	visible 1
+	ignorepointer 1
+	position 0 0
+	size 1 1
+	hexactpos 0
+	vexactpos 0
+	hexactsize 0
+	vexactsize 0
+	{
+		TextWidgetClass QTHint {
+			visible 0
+			ignorepointer 1
+			color 1 0.9 0.2 1
+			position 0.02 0.04
+			size 0.50 0.05
+			hexactpos 0
+			vexactpos 0
+			hexactsize 0
+			vexactsize 0
+			text "[ Press F to see Quests ]"
+			halign left_ref
+		}
+	}
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    QuestTrader | QuestToast.layout
+    4 stacked toast slots, anchored top-left below the hint widget.
+    Each slot: ToastPanel0..3, ToastBar0..3, ToastText0..3
+-->
+<html>
+  <body>
+    <Widget name="ToastRoot" x="0" y="0" width="1" height="1">
+
+      <!-- Slot 0 (top, closest to hint) -->
+      <Widget class="ImageWidget" name="ToastPanel0"
+              x="0.02" y="0.100" width="0.300" height="0.045"
+              color="0 0 0 0.82" />
+      <Widget class="ImageWidget" name="ToastBar0"
+              x="0.02" y="0.100" width="0.006" height="0.045"
+              color="0.31 0.86 0.31 1" />
+      <Widget class="TextWidget" name="ToastText0"
+              x="0.030" y="0.104" width="0.285" height="0.037"
+              size="0.015" color="0.88 0.88 0.88 1"
+              text="" />
+
+      <!-- Slot 1 -->
+      <Widget class="ImageWidget" name="ToastPanel1"
+              x="0.02" y="0.152" width="0.300" height="0.045"
+              color="0 0 0 0.82" />
+      <Widget class="ImageWidget" name="ToastBar1"
+              x="0.02" y="0.152" width="0.006" height="0.045"
+              color="0.31 0.86 0.31 1" />
+      <Widget class="TextWidget" name="ToastText1"
+              x="0.030" y="0.156" width="0.285" height="0.037"
+              size="0.015" color="0.88 0.88 0.88 1"
+              text="" />
+
+      <!-- Slot 2 -->
+      <Widget class="ImageWidget" name="ToastPanel2"
+              x="0.02" y="0.204" width="0.300" height="0.045"
+              color="0 0 0 0.82" />
+      <Widget class="ImageWidget" name="ToastBar2"
+              x="0.02" y="0.204" width="0.006" height="0.045"
+              color="0.31 0.86 0.31 1" />
+      <Widget class="TextWidget" name="ToastText2"
+              x="0.030" y="0.208" width="0.285" height="0.037"
+              size="0.015" color="0.88 0.88 0.88 1"
+              text="" />
+
+      <!-- Slot 3 (bottom) -->
+      <Widget class="ImageWidget" name="ToastPanel3"
+              x="0.02" y="0.256" width="0.300" height="0.045"
+              color="0 0 0 0.82" />
+      <Widget class="ImageWidget" name="ToastBar3"
+              x="0.02" y="0.256" width="0.006" height="0.045"
+              color="0.31 0.86 0.31 1" />
+      <Widget class="TextWidget" name="ToastText3"
+              x="0.030" y="0.260" width="0.285" height="0.037"
+              size="0.015" color="0.88 0.88 0.88 1"
+              text="" />
+
+    </Widget>
+  </body>
+</html>

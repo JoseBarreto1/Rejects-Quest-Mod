@@ -1,0 +1,26 @@
+{
+  "QuantityCountedItems": [
+    "TetracyclineAntibiotics",
+    "PainkillerTablets",
+    "VitaminBottle",
+    "CharcoalTablets",
+    "Rag",
+    "WoodenPlank",
+    "PurificationTablets"
+  ],
+  "StackableRewardItems": [
+    "MoneyRuble1",
+    "MoneyRuble5",
+    "MoneyRuble10",
+    "MoneyRuble25",
+    "MoneyRuble50",
+    "MoneyRuble100",
+    "TetracyclineAntibiotics",
+    "PainkillerTablets",
+    "VitaminBottle",
+    "CharcoalTablets",
+    "Rag",
+    "WoodenPlank",
+    "PurificationTablets"
+  ]
+}
