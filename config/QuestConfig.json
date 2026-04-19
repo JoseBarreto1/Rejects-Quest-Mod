@@ -2197,21 +2197,31 @@
     {
       "id": "quest_071",
       "traderId": "trader_003",
-      "title": "Warm Shelter",
-      "description": "Winter is coming and Emma's survivors need clothing. Any warm gear you can find will help.",
+      "title": "Survival Cache",
+      "description": "Emma is putting together emergency survival caches around the settlement. She needs the basics - rope, a knife, something to start a fire, and a way to purify water.",
       "type": 0,
       "repeatable": false,
       "cooldownHours": 0,
       "objectives": [
         {
-          "itemClassName": "WoolCoat",
-          "requiredAmount": 2,
-          "description": "Find 2 Wool Coats"
+          "itemClassName": "Rope",
+          "requiredAmount": 3,
+          "description": "Collect 3 Ropes"
         },
         {
-          "itemClassName": "Balaclava",
+          "itemClassName": "CombatKnife",
+          "requiredAmount": 2,
+          "description": "Find 2 Combat Knives"
+        },
+        {
+          "itemClassName": "PetrolLighter",
           "requiredAmount": 3,
-          "description": "Find 3 Balaclavas"
+          "description": "Collect 3 Lighters"
+        },
+        {
+          "itemClassName": "PurificationTablets",
+          "requiredAmount": 6,
+          "description": "Collect 6 Purification Tablets"
         }
       ],
       "rewards": [
@@ -2224,8 +2234,8 @@
           "amount": 2
         }
       ],
-      "rewardMessage": "Warm hearts and warm bodies. Thank you.",
-      "acceptMessage": "Coats and balaclavas. The cold kills as surely as anything else.",
+      "rewardMessage": "This will keep people alive out there. Good work.",
+      "acceptMessage": "Rope, knives, lighters, purification tablets. The basics. Don't come back without them.",
       "prerequisiteQuestIds": []
     },
     {
